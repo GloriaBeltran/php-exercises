@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #e3e3e3;
+	font-family: "Roboto", sans-serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.tabla {
+	width: 550px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(11, auto);
+	border-radius: 5px;
+}
+.tabla .cabecera {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	background-color: #008be7;
+	color: #fff;
+	font-weight: 500;
+}
+.tabla .cabecera * {
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+}
+.tabla .elemento {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+}
+.tabla .elemento * {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	background-color: #ccc;
+	font-size: 1.3rem;
+}
+.btn-back {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	height: 50px;
+	width: 50px;
+	margin: 0 auto;
+	background-color: #a00;
+	border: none;
+	font-size: 1.4rem;
+	color: #fff;
+	font-weight: 500;
+	border-radius: 4px;
+	transition: all 180ms linear;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.btn-back:hover {
+	background-color: #d00;
+	cursor: pointer;
+}
+.btn-back:active {
+	background-color: #f00;
+}
