@@ -10,8 +10,8 @@
 <body>
 	<h1 class="titulo">Ingrese su divisa y un metodo</h1>
 	<form action="datos.php" class="formulario">
-		<input type="text" class="input" name="money">
-		<select name="metodo" class="select">
+		<input type="number" class="input" name="money" required>
+		<select name="metodo" class="select" required>
 			<option value="COP->MXN">Peso colombiano a peso mexicano</option>
 			<option value="USD->EUR">Dólar a euro</option>
 			<option value="MXN->USD">Peso mexicano a dólar</option>
